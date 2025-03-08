@@ -1,0 +1,86 @@
+:root {
+    --border-color: #333;
+    --primary-color: #61576b;
+    --secondary-color: #7f738b;
+    --tertiary-color: #b2a1c4;
+}
+/*div {
+    border: solid var(--border-color);
+}*/
+.body {
+    padding-top: 15px;
+    background-color: var(--primary-color);
+}
+.profileIMG {
+    max-width:250px; 
+    max-height:250px; 
+    margin:0px;
+}
+.section-title {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.nl {
+    clear:left;
+}
+.wireframe-showcase {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.wireframe-showcase>img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 100px) {
+
+    /* For tablets: */
+    .body {
+        background-color: var(--tertiary-color);
+    }
+    .col {
+        background-color: var(--tertiary-color);
+    }
+    .wireframe-showcase {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .body {
+        background-color: var(--secondary-color);
+    }
+
+    .col {
+        background-color: var(--secondary-color);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .col {
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .col {
+        background-color: lavender;
+    }
+}
+/*Orientation of landscape*/
+@media only screen and (orientation: landscape) {
+    .body {
+        background-color: var(--primary-color);
+        color:aliceblue;
+    }
+
+    .col {
+        background-color: var(--primary-color);
+    }
+    .wireframe-showcase {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
