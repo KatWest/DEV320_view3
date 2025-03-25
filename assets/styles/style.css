@@ -3,6 +3,7 @@
     --primary-color: #61576b;
     --secondary-color: #7f738b;
     --tertiary-color: #b2a1c4;
+    --text-color: white;
 }
 /*div {
     border: solid var(--border-color);
@@ -26,11 +27,11 @@
 }
 .wireframe-showcase {
     display: grid;
-    grid-template-columns: auto auto auto;
 }
 .wireframe-showcase>img {
-    max-width: 100%;
+    height: 100%;
 }
+
 
 @media only screen and (min-width: 100px) {
 
@@ -44,6 +45,9 @@
     .wireframe-showcase {
         display: block;
     }
+    .wireframe-showcase>img {
+        width: 75vw;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -53,6 +57,9 @@
 
     .col {
         background-color: var(--secondary-color);
+    }
+    .wireframe-showcase>img {
+        width: auto;
     }
 }
 
@@ -80,7 +87,6 @@
         background-color: var(--primary-color);
     }
     .wireframe-showcase {
-        display: grid;
-        grid-template-columns: auto auto auto;
+        height: 50vh;
     }
 }
